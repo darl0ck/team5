@@ -23,13 +23,14 @@ export default class Metadata extends React.Component {
                         {
                             text-align: center;
                             display: flex;
-                            width: 15%;
+                            width: 25%;
                             flex-direction: column;
                             justify-content: space-around;
                             font-family: 'Lato', sans-serif;
                             margin: 10px;
                             padding: 10px;
-                            border: 1px solid grey;
+                            border-right: 2px rgb(255, 129, 124) double;
+                            background: rgb(255, 229, 204, 0.15);
                         }
                         .metadata:hover
                         {
@@ -39,12 +40,16 @@ export default class Metadata extends React.Component {
                         .link
                         {
                             color: rgb(57, 121, 170);
+                            overflow: hidden;
+                            text-overflow: ellipsis;
                         }
                         .pic
                         {
                             margin-top: 10px;
                             max-width:100%;
                             border-radius: 10%;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
                         }
                         .text
                         {
