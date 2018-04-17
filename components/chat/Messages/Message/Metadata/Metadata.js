@@ -39,7 +39,7 @@ export default class Metadata extends React.Component {
 
                         .link
                         {
-                            color: rgb(57, 121, 170);
+                            color: #3979aa;
                             overflow: hidden;
                             text-overflow: ellipsis;
                         }
@@ -55,7 +55,7 @@ export default class Metadata extends React.Component {
                         {
                             font-size: 14px;
                             text-decoration: underline !important;
-                            color:rgb(0, 0, 0);
+                            color: #000000;
                             overflow: hidden;
                             text-overflow: ellipsis;
                             display: -webkit-box;

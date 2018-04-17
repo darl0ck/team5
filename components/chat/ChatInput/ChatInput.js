@@ -16,7 +16,7 @@ export default class ChatInput extends React.Component {
     onEnterPress = (e) => {
         if (e.keyCode === 13 && e.shiftKey === false) {
             e.preventDefault();
-            this.handleSubmit().then(this.setState({ value: '' })); // eslint-disable-line no-invalid-this, max-len
+            this.handleSubmit(e).then(this.setState({ value: '' })); // eslint-disable-line no-invalid-this, max-len
         }
     }
 
