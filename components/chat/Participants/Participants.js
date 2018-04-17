@@ -33,7 +33,7 @@ export default class Participants extends React.Component {
                             clear: left;
                             left: -35px;
                             font: 12px;
-                            background: rgb(220,220,220);
+                            background: #e6e6dc;
                             width: 160px;
                             margin: 0;
                             white-space: nowrap;

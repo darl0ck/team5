@@ -28,14 +28,14 @@ export default class Profile extends React.Component {
                     .user__link
                     {
                         margin-top: 15px;
-                        color: black;
+                        color: #000000;
                     }
                     .close
                     {
                         position:relative;
                         left: 44%;
                         top: 10px;
-                        background-color: white;
+                        background-color: #ffffff;
                         border: none;
                         padding: 10px;
                         border-radius: 4px;
@@ -43,8 +43,8 @@ export default class Profile extends React.Component {
 
                         .close:hover
                     {
-                        background-color: coral;
-                        color: black;
+                        background-color: #ff7f50;
+                        color: #000000;
                     }
 
                     .card, .card *{

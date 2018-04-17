@@ -32,14 +32,14 @@ export default function SignIn({ signInString }) {
                 border: 2px solid #FF7F50;
                 text-align: center;
                 border-radius: 3px;
-                background-color: white;
+                background-color: #ffffff;
                 color: #000;
             }
 
             .sign-in__a:hover
             {
                 background-color: #f55649;
-                color: white;
+                color: #ffffff;
             }
         `}</style>
     </div>;
