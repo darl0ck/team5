@@ -14,9 +14,9 @@ export default class ChatInput extends React.Component {
     }
 
     onEnterPress = (e) => {
-        if(e.keyCode == 13 && e.shiftKey == false) {
+        if (e.keyCode === 13 && e.shiftKey === false) {
             e.preventDefault();
-            this.handleSubmit().then(this.setState({ value: '' }));
+            this.handleSubmit().then(this.setState({ value: '' })); // eslint-disable-line no-invalid-this
         }
     }
 
@@ -43,7 +43,7 @@ export default class ChatInput extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <textarea type="text" value={this.state.value}
-                              onKeyDown={this.onEnterPress} onChange={this.handleChange} />
+                        onKeyDown={this.onEnterPress} onChange={this.handleChange} />
                     <style jsx>
                         {`               
                         textarea

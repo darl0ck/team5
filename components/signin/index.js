@@ -1,5 +1,6 @@
 export default function SignIn({ signInString }) {
     return <div className="sign-in">
+        <img src={'https://imgur.com/u3c6Dsf'} alt="logo" /> /* почему не грузит? */
         <a className="sign-in__a" href="/auth">{ signInString }</a>
         <style jsx>{`
             .sign-in
