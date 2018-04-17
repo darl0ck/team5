@@ -40,16 +40,20 @@ export default class CreateConversationForm extends React.Component {
 
     render() {
         return (
+            <div className="create__conversation__card">
             <form onSubmit={this.handleSubmit}>
-                <header>Create conversation</header>
+                <header className="create__conversation__header">Create conversation:</header>
                 <input
                     type='text'
+                    className="create__conversation__input"
                     placeholder={this.state.placeholder}
                     value={this.state.inputValue}
                     onChange={this.handleChange}
                     disabled={this.state.disabled}
+                    autoFocus
                 />
             </form>
+            </div>
         );
     }
 }
