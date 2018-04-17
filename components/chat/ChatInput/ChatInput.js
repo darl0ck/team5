@@ -13,6 +13,13 @@ export default class ChatInput extends React.Component {
         this.setState({ value: event.target.value });
     }
 
+    onEnterPress = (e) => {
+        if(e.keyCode == 13 && e.shiftKey == false) {
+            e.preventDefault();
+            this.handleSubmit().then(this.setState({ value: '' }));
+        }
+    }
+
     async handleSubmit(event) {
         const self = this;
 
@@ -35,11 +42,11 @@ export default class ChatInput extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <input type="text" value={this.state.value} onChange={this.handleChange} />
-                    <input className={'hidden'} type="submit" value="Submit" />
+                    <textarea type="text" value={this.state.value}
+                              onKeyDown={this.onEnterPress} onChange={this.handleChange} />
                     <style jsx>
                         {`               
-                        input
+                        textarea
                         {
                             position: fixed;
                             bottom: 0px;
@@ -56,10 +63,6 @@ export default class ChatInput extends React.Component {
                             resize: none;
                             overflow-y: scroll;
                             border: solid 5px lightsalmon;
-                        }
-                        .hidden
-                        {
-                        display:none;
                         }
                     `}
                     </style>

@@ -73,124 +73,9 @@ export default class Menu extends React.Component {
 
                 <style jsx>{`
                     @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-                    @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-                    @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
                     @import
                     url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
-                    .reg__date
-                    {
-                        margin-top: 15px;
-                        font-size: 10px;
-                    }
-
-                    .user__link
-                    {
-                    margin-top: 15px;
-                    color: black;
-                    }
-
-                    .close
-                    {
-                        position:relative;
-                        left: 44%;
-                        top: 10px;
-                        background-color: coral;
-                        border: none;
-                        padding: 10px;
-                    }
-
-                    .close:hover
-                    {
-                        background-color: white;
-                        color: black;
-
-                    }
-
-                    .card, .card *{
-                    outline: none !important;
-                    }
-
-                    .card {
-                        outline: none;
-                        width: 100%
-                        hight: 100%;
-                        text-align: center;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-                        font-family: 'Lato', sans-serif;
-                        box-shadow: 0 4px 8px 0 rgba(255,160,122,0.5);
-                        transition: 0.3s;
-                        background: white;
-                    }
-
-                    /* On mouse-over, add a deeper shadow */
-                    .card:hover {
-                        box-shadow: 0 8px 6px 0 rgba(255,160,122,0.5);
-                    }
-
-                    /* Add some padding inside the card container */
-                    .container {
-                        text-align: center;
-                        padding: 20px;
-                    }
-
-                    .avatar
-                    {
-                        align-self:center;
-                    }
-                    img
-                    {
-                        width: 100px;
-                        height: 100px;
-                        border-radius: 60%;
-                    }
-
-                    .contact-container
-                    {
-                        position: fixed;
-                        overflow-y: auto;
-                        margin-top: 70px;
-                        margin-left: 20px;
-                        margin-bottom: 100px;
-                        float: left;
-                        width: 40%;
-                        height: 80%;
-                    }
-                    .contact
-                    {
-                        margin-top: 10px;
-                        width: 90%;
-                        height: 100px;
-                        background-color: rgba(255,255,255,0.9);
-                        box-shadow: inset 0px 0px 0px #e5e5e5, inset 0px 0px 0px #e5e5e5,
-                        inset 0px -2px 0px #d7d7d7;
-                    }
-
-                    .avatar-container img
-                    {
-                        margin-left: 10px;
-                        margin-top: -5px;
-                        width: 100px;
-                        height: 100px;
-                        border-radius: 60%;
-                    }
-
-                    .contact-name
-                    {
-                        text-align: center;
-                        margin-top: -50px;
-                        margin-left: 20px;
-                        font-family: Arial, serif;
-                        font-size: 20px;
-                    }
-
-                    a
-                    {
-                        color: rgba(82,179,217,0.9);
-                    }
-                    
                     .menu
                     {
                         position: fixed;
@@ -247,21 +132,6 @@ export default class Menu extends React.Component {
                         font-weight: 300;
                         color: rgba(255,255,255,0.98);
                         cursor: default;
-                    }
-                    .last
-                    {
-                        position: absolute;
-                        top: 30px;
-                        left: 115px;
-                        font-family: 'Lato';
-                        font-size: 11px;
-                        font-weight: 400;
-                        color: rgba(255,255,255,0.6);
-                        cursor: default;
-                    }
-                    a
-                    {
-                        color: rgba(82,179,217,0.9);
                     }
                     `}</style>
             </div>

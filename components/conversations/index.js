@@ -118,31 +118,31 @@ export default class Conversations extends React.Component {
                         bottom: 0;
                         margin: auto;
                     }
-    
+
                     .rce-mbox-forward-left {
                         display: flex;
                         opacity: 0;
                         visibility: hidden;
                         left: -50px;
                     }
-    
+
                     .rce-mbox-forward-right {
                         display: flex;
                         opacity: 0;
                         visibility: hidden;
                         right: -50px;
                     }
-    
+
                     .rce-container-mbox:hover .rce-mbox-forward-left {
                         opacity: 1;
                         visibility: visible;
                     }
-    
+
                     .rce-container-mbox:hover .rce-mbox-forward-right {
                         opacity: 1;
                         visibility: visible;
                     }
-    
+
                     .rce-mbox {
                         position: relative;
                         background: white;
@@ -158,13 +158,13 @@ export default class Conversations extends React.Component {
                         float: left;
                         min-width: 140px;
                     }
-    
+
                     .rce-mbox-body {
                         margin: 0;
                         padding: 0;
                         position: relative;
                     }
-    
+
                     .rce-mbox.rce-mbox-right {
                         float: right;
                         margin-left: 5px;
@@ -172,16 +172,16 @@ export default class Conversations extends React.Component {
                         border-top-right-radius: 0px;
                         border-top-left-radius: 5px;
                     }
-    
+
                     .rce-mbox-text {
                         font-size: 13.6px;
                         word-break: break-word;
                     }
-    
+
                     .rce-mbox-text:after {
                         content: "\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0\\A0"
                     }
-    
+
                     .rce-mbox-time {
                         text-align: right;
                         color: rgba(0, 0, 0, 0.45);
@@ -190,11 +190,11 @@ export default class Conversations extends React.Component {
                         right: -4px;
                         bottom: -5px;
                     }
-    
+
                     .rce-mbox-time.non-copiable:before {
                         content: attr(data-text);
                     }
-    
+
                     .rce-mbox-time-block {
                         /*position: relative;*/
                         right: 0;
@@ -210,15 +210,15 @@ export default class Conversations extends React.Component {
                         border-bottom-right-radius: 5px;
                         color: #fff;
                     }
-    
+
                     .rce-mbox--clear-padding {
                         padding-bottom: 3px;
                     }
-    
+
                     .rce-mbox.rce-mbox--clear-notch {
                         border-radius: 5px 5px 5px 5px !important;
                     }
-    
+
                     .rce-mbox-right-notch {
                         position: absolute;
                         right: -14px;
@@ -228,7 +228,7 @@ export default class Conversations extends React.Component {
                         fill: white;
                         filter: drop-shadow( 2px 0px 1px rgba(0, 0, 0, .2));
                     }
-    
+
                     .rce-mbox-left-notch {
                         position: absolute;
                         left: -14px;
@@ -237,7 +237,7 @@ export default class Conversations extends React.Component {
                         height: 15px;
                         fill: white;
                     }
-    
+
                     .rce-mbox-title {
                         margin: 0;
                         margin-bottom: 8px;
@@ -249,20 +249,20 @@ export default class Conversations extends React.Component {
                         display: flex;
                         align-items: center;
                     }
-    
+
                     .rce-mbox-title:hover {
                         text-decoration: underline;
                     }
-    
+
                     .rce-mbox-title--clear {
                         margin-bottom: 5px;
                     }
-    
+
                     .rce-mbox-status {
                         margin-left: 3px;
                         font-size: 15px;
                     }
-    
+
                     .rce-mbox-title > .rce-avatar-container {
                         margin-right: 5px;
                     }
@@ -271,13 +271,13 @@ export default class Conversations extends React.Component {
                         margin-right: -6px;
                         margin-left: -6px;
                     }
-    
+
                     .rce-mbox-photo .rce-mbox-text {
                         padding: 5px 0px;
                         max-width: 300px;
                         margin: auto;
                     }
-    
+
                     .rce-mbox-photo--img {
                         position: relative;
                         display: flex;
@@ -286,7 +286,7 @@ export default class Conversations extends React.Component {
                         border-radius: 5px;
                         max-height: 300px;
                     }
-    
+
                     .rce-mbox-photo--img__block {
                         position: absolute;
                         top: 0;
@@ -297,20 +297,20 @@ export default class Conversations extends React.Component {
                         border-radius: 5px;
                         display: flex;
                     }
-    
+
                     .rce-mbox-photo--img img {
                         height: 100%;
                         min-height: 100px;
                         user-select: none;
                     }
-    
+
                     .rce-mbox-photo--img__block-item {
                         margin: auto;
                         cursor: pointer;
                         width: 100px;
                         height: 100px;
                     }
-    
+
                     .rce-mbox-photo--download {
                         color: #efe;
                         display: flex;
@@ -324,18 +324,18 @@ export default class Conversations extends React.Component {
                         height: 100px;
                         width: 100px;
                     }
-    
+
                     .rce-mbox-photo--download:hover {
                         opacity: .7;
                     }
-    
+
                     .rce-mbox-photo--download:active {
                         opacity: .3;
                     }
                     .rce-mbox-file {
                         padding-bottom: 13px;
                     }
-    
+
                     .rce-mbox-file > button {
                         background: #e9e9e9;
                         display: flex;
@@ -352,18 +352,18 @@ export default class Conversations extends React.Component {
                         outline: none;
                         border:none;
                     }
-    
+
                     .rce-mbox-file > button > * {
                         padding: 0px 10px;
                     }
-    
+
                     .rce-mbox-file--icon {
                         font-size: 30px;
                         align-items: center;
                         display: flex;
                         flex-direction: column;
                     }
-    
+
                     .rce-mbox-file--size {
                         font-size: 10px;
                         margin-top: 3px;
@@ -372,20 +372,20 @@ export default class Conversations extends React.Component {
                         overflow: hidden;
                         text-overflow: ellipsis;
                     }
-    
+
                     .rce-mbox-file--text {
                         font-size: 13.6px;
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
                     }
-    
+
                     .rce-mbox-file--buttons {
                         font-size: 30px;
                         align-items: center;
                         display: flex;
                     }
-    
+
                     .rce-mbox-file--loading {
                         font-size: 15px;
                         width: 40px;
@@ -396,7 +396,7 @@ export default class Conversations extends React.Component {
                         align-items: center;
                         justify-content: center;
                     }
-    
+
                     .rce-smsg {
                         position: relative;
                         background: white;
@@ -411,7 +411,7 @@ export default class Conversations extends React.Component {
                         align-items: center;
                         justify-content: center;
                     }
-    
+
                     .rce-smsg-text {
                         text-align: center;
                         display: inline-block;
@@ -430,11 +430,11 @@ export default class Conversations extends React.Component {
                         margin-left: -6px;
                         border-radius: 5px;
                     }
-    
+
                     .rce-mbox-location-img {
                         width: 100%;
                     }
-    
+
                     .rce-mbox-location-text {
                         padding: 5px 0;
                         width: 250px;
@@ -456,52 +456,52 @@ export default class Conversations extends React.Component {
                         align-items: center;
                         overflow: hidden;
                     }
-    
+
                     .rce-avatar-container .rce-avatar {
                         width: 100%;
                         height: 100%;
                     }
-    
+
                     .rce-avatar-container.flexible .rce-avatar {
                         height: auto !important;
                         width: 100% !important;
                         border-radius: unset !important;
                         overflow: unset !important;
                     }
-    
+
                     .rce-avatar-container.default{
                         width: 25px;
                         height: 25px;
                     }
-    
+
                     .rce-avatar-container.rounded{
                         border-radius: 5px;
                     }
-    
+
                     .rce-avatar-container.circle{
                         border-radius: 100%;
                     }
-    
+
                     .rce-avatar-container.xsmall{
                         width: 30px;
                         height: 30px;
                     }
-    
+
                     .rce-avatar-container.small{
                         width: 35px;
                         height: 35px;
                     }
-    
+
                     .rce-avatar-container.medium{
                         width: 40px;
                         height: 40px;
                     }
-    
+
                     .rce-avatar-container.large{
                         width: 45px;
                         height: 45px;
                     }
-    
+
                     .rce-avatar-container.xlarge{
                         width: 55px;
                         height: 55px;
@@ -512,7 +512,7 @@ export default class Conversations extends React.Component {
                         overflow: hidden;
                         min-width: 240px;
                     }
-    
+
                     .rce-citem {
                         position: relative;
                         background: white;
@@ -525,11 +525,11 @@ export default class Conversations extends React.Component {
                         overflow: hidden;
                         min-width: 240px;
                     }
-    
+
                     .rce-citem:hover {
                         background: #f9f9f9;
                     }
-    
+
                     .rce-citem-avatar {
                         position: relative;
                         padding: 0 15px 0 13px;
@@ -537,7 +537,7 @@ export default class Conversations extends React.Component {
                         display: flex;
                         align-items: center;
                     }
-    
+
                     .rce-citem-status {
                         width: 20px;
                         height: 20px;
@@ -550,7 +550,7 @@ export default class Conversations extends React.Component {
                         justify-content: center;
                         background: #ccc;
                     }
-    
+
                     .rce-citem-avatar img {
                         width: 50px;
                         height: 50px;
@@ -564,7 +564,7 @@ export default class Conversations extends React.Component {
                         text-overflow: ellipsis;
                         white-space: nowrap;
                     }
-    
+
                     .rce-citem-body {
                         display: flex;
                         flex: 1;
@@ -575,41 +575,41 @@ export default class Conversations extends React.Component {
                         border-bottom: 1px solid rgba(0,0,0,.05);
                         overflow: hidden;
                     }
-    
+
                     .rce-citem-body--top {
                         display: flex;
                     }
-    
+
                     .rce-citem-body--bottom {
                         margin-top: 4px;
                         display: flex;
                     }
-    
+
                     .rce-citem-body--bottom-title, .rce-citem-body--top-title {
                         flex: 1;
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         overflow: hidden;
                     }
-    
+
                     .rce-citem-body--top-title {
                         font-size: 16px;
                     }
-    
+
                     .rce-citem-body--bottom-title {
                         color: #555;
                         font-size: 15px;
                     }
-    
+
                     .rce-citem-body--top-time {
                         font-size: 12px;
                         color: rgba(0,0,0,0.4)
                     }
-    
+
                     .rce-citem-body--bottom-status {
                         margin-left: 3px;
                     }
-    
+
                     .rce-citem-body--bottom-status span {
                         width: 18px;
                         height: 18px;
@@ -631,14 +631,14 @@ export default class Conversations extends React.Component {
                         position: relative;
                         display: flex;
                     }
-    
+
                     .rce-mlist {
                         display: block;
                         overflow: auto;
                         position: relative;
                         flex: 1;
                     }
-    
+
                     .rce-mlist-down-button {
                         position: absolute;
                         right: 10px;
@@ -655,11 +655,11 @@ export default class Conversations extends React.Component {
                         cursor: pointer;
                         transition: 200ms;
                     }
-    
+
                     .rce-mlist-down-button:hover {
                         opacity: 0.7;
                     }
-    
+
                     .rce-mlist-down-button--badge {
                         position: absolute;
                         right: -5px;
@@ -684,7 +684,7 @@ export default class Conversations extends React.Component {
                         background: #fff;
                         align-items: center;
                     }
-    
+
                     .rce-input {
                         flex: 1;
                         height: 40px;
@@ -696,43 +696,43 @@ export default class Conversations extends React.Component {
                         box-sizing: border-box;
                         outline: none;
                     }
-    
+
                     .rce-input-textarea {
                         height: 37px;
                         padding: 10px 5px;
                         resize: none;
                     }
-    
+
                     .rce-input-buttons {
                         display: flex;
                         flex-direction: row;
                         margin: 5px;
                     }
-    
+
                     .rce-input-buttons > * {
                         display: flex;
                         flex-direction: row;
                     }
-    
+
                     .rce-input-buttons .rce-button:nth-child(even) {
                         margin-left: 5px;
                         margin-right: 5px;
                     }
-    
+
                     .rce-input-buttons .rce-button:last-child {
                         margin-right: 0;
                     }
-    
+
                     .rce-left-padding {
                         padding-left: 10px;
                         padding-right: 0px !important;
                     }
-    
+
                     .rce-right-padding {
                         padding-right: 10px;
                         padding-left: 0px !important;
                     }
-    
+
                     .rce-input::placeholder {
                         color: #afafaf;
                     }
@@ -756,53 +756,53 @@ export default class Conversations extends React.Component {
                         border: none;
                         position: relative;
                     }
-    
+
                     .rce-button-icon--container {
                         display: flex;
                         align-items: center;
                     }
-    
+
                     .rce-button:hover {
                         opacity: 0.8;
                     }
-    
+
                     .rce-button:active {
                         opacity: 0.6;
                     }
-    
+
                     .rce-button.outline {
                         background: rgba(0, 0, 0, 0) !important;
                         border: 1px solid #3979aa;
                         color: #3979aa;
                     }
-    
+
                     .rce-button.outline:hover {
                         opacity: 0.6;
                     }
-    
+
                     .rce-button.outline:active {
                         opacity: 0.3;
                     }
-    
+
                     .rce-button.transparent {
                         background: rgba(0, 0, 0, 0) !important;
                     }
-    
+
                     .rce-button.transparent:hover {
                         opacity: 0.6;
                     }
-    
+
                     .rce-button.transparent:active {
                         opacity: 0.3;
                     }
-    
+
                     .rce-button-icon {
                         position: relative;
                         font-size: 18px;
                         display: flex;
                         padding: 0 3px;
                     }
-    
+
                     .rce-button-badge{
                         border-radius: 4px;
                         padding: 4px;
@@ -816,7 +816,7 @@ export default class Conversations extends React.Component {
                         top:-7px;
                         font-size: 10px;
                     }
-    
+
                     .rce-button.circle {
                         min-width: 35px;
                         min-height: 35px;
@@ -830,27 +830,27 @@ export default class Conversations extends React.Component {
                         justify-content: space-between;
                         padding: 10px 10px;
                     }
-    
+
                     .rce-navbar.light {
                         background: #f4f4f4;
                     }
-    
+
                     .rce-navbar.dark {
                         background: #2f414c;
                     }
-    
+
                     .rce-navbar-item {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
                         justify-content: flex-start;
                     }
-    
+
                     .rce-navbar-item > * {
                         display: flex;
                         flex-direction: row;
                     }
-    
+
                     .rce-navbar-item > * > * {
                         margin-left: 5px;
                     }.rce-dropdown-container {
@@ -872,12 +872,12 @@ export default class Conversations extends React.Component {
                         transform-origin: left top;
                         z-index: 99999;
                     }
-    
+
                     .rce-dropdown.dropdown-show{
                         animation: dropdown-scaling 0.2s ease forwards;
                         display: flex;
                     }
-    
+
                     @keyframes dropdown-scaling {
                         0% {
                             opacity: 0;
@@ -891,12 +891,12 @@ export default class Conversations extends React.Component {
                             transform: scale(1);
                         }
                     }
-    
+
                     .rce-dropdown.dropdown-hide{
                         animation: dropdown-reverse-scaling 0.2s ease forwards;
                         display: flex;
                     }
-    
+
                     @keyframes dropdown-reverse-scaling {
                         0% {
                             opacity: 1;
@@ -911,35 +911,35 @@ export default class Conversations extends React.Component {
                             transform: scale(0);
                         }
                     }
-    
+
                     .rce-dropdown-open__nortwest {
                         transform-origin: left top;
                         left: 0;
                         top: 100%;
                         margin-top: 5px
                     }
-    
+
                     .rce-dropdown-open__norteast {
                         transform-origin: right top;
                         right: 0;
                         top: 100%;
                         margin-top: 5px
                     }
-    
+
                     .rce-dropdown-open__southwest {
                         transform-origin: left bottom;
                         left: 0;
                         bottom: 100%;
                         margin-bottom: 5px
                     }
-    
+
                     .rce-dropdown-open__southeast {
                         transform-origin: right bottom;
                         right: 0;
                         bottom: 100%;
                         margin-bottom: 5px
                     }
-    
+
                     .rce-dropdown ul {
                         list-style: none;
                         margin: 0;
@@ -950,7 +950,7 @@ export default class Conversations extends React.Component {
                         align-items: center;
                         justify-content: center;
                     }
-    
+
                     .rce-dropdown ul li {
                         white-space: nowrap;
                         color: #767676;
@@ -962,21 +962,21 @@ export default class Conversations extends React.Component {
                         box-sizing: border-box;
                         user-select: none;
                     }
-    
+
                     .rce-dropdown ul li:last-child {
                         border: none;
                     }
-    
+
                     .rce-dropdown ul li:hover a {
                         color: #3a6d8c;
                     }
-    
+
                     .rce-dropdown.fade {
                         opacity: 0;
                         transform: scale(1);
                         animation: dropdown-fade 0.5s ease forwards;
                     }
-    
+
                     @keyframes dropdown-fade {
                         0% {
                             opacity: 0;
@@ -994,15 +994,15 @@ export default class Conversations extends React.Component {
                         box-sizing: border-box;
                         min-height: 100%;
                     }
-    
+
                     .rce-sbar.light {
                         background: #f4f4f4;
                     }
-    
+
                     .rce-sbar.dark {
                         background: #2f414c;
                     }
-    
+
                     .rce-sbar-item {
                         display: flex;
                         flex-direction: row;
@@ -1010,12 +1010,12 @@ export default class Conversations extends React.Component {
                         justify-content: flex-start;
                         max-width: 100%;
                     }
-    
+
                     .rce-sbar-item > * {
                         display: flex;
                         flex-direction: column;
                     }
-    
+
                     .rce-sbar-item__center {
                         margin: 15px 0;
                     }.rce-popup-wrapper {
@@ -1032,7 +1032,7 @@ export default class Conversations extends React.Component {
                         align-items: center;
                         justify-content: center;
                     }
-    
+
                     .rce-popup {
                         background: #fff;
                         border-radius: 5px;
@@ -1047,7 +1047,7 @@ export default class Conversations extends React.Component {
                         animation: popup-scaling 0.4s ease forwards;
                         box-sizing: border-box;
                     }
-    
+
                     @keyframes popup-scaling {
                         0% {
                             transform: scale(0);
@@ -1062,7 +1062,7 @@ export default class Conversations extends React.Component {
                             opacity: 1;
                         }
                     }
-    
+
                     .rce-popup-header {
                         padding: 18px 8px;
                         display: flex;
@@ -1071,17 +1071,17 @@ export default class Conversations extends React.Component {
                         justify-content: space-between;
                         box-sizing: border-box;
                     }
-    
+
                     .rce-popup-content {
                         padding: 8px;
                         font-size: 14px;
                         box-sizing: border-box;
                     }
-    
+
                     .rce-popup-content * {
                         margin: 0
                     }
-    
+
                     .rce-popup-footer {
                         padding: 18px 8px;
                         display: flex;
@@ -1090,7 +1090,7 @@ export default class Conversations extends React.Component {
                         justify-content: flex-end;
                         box-sizing: border-box;
                     }
-    
+
                     .rce-popup-footer>* {
                         margin-left: 5px;
                     }
@@ -1104,37 +1104,6 @@ export default class Conversations extends React.Component {
                         float: left;
                         width: 40%;
                         height: 80%;
-                    }
-                    .contact
-                    {
-                        margin-top: 10px;
-                        width: 90%;
-                        height: 100px;
-                        background-color: rgba(255,255,255,0.9);
-                        box-shadow: inset 0px 0px 0px #e5e5e5, inset 0px 0px 0px #e5e5e5, inset 0px -2px 0px #d7d7d7;
-                    }
-    
-                    .avatar-container img
-                    {
-                        margin-left: 10px;
-                        margin-top: -5px;
-                        width: 100px;
-                        height: 100px;
-                        border-radius: 60%;
-                    }
-    
-                    .contact-name
-                    {
-                        text-align: center;
-                        margin-top: -50px;
-                        margin-left: 20px;
-                        font-family: Arial, serif;
-                        font-size: 20px;
-                    }
-    
-                    a
-                    {
-                        color: rgba(82,179,217,0.9);
                     }
                     `}</style>
             </div>

@@ -51,7 +51,7 @@ export default class AddToContactsForm extends React.Component {
     handleBadResponse() {
         this.setState({
             inputValue: '',
-            placeholder: 'Error occured',
+            placeholder: 'User not found',
             disabled: false
         });
     }

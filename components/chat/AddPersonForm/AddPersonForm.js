@@ -60,7 +60,7 @@ export default class AddPersonForm extends React.Component {
     handleBadResponse() {
         this.setState({
             inputValue: '',
-            placeholder: 'Error occured',
+            placeholder: 'Error occurred',
             errorState: true,
             disabled: false
         });

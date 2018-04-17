@@ -16,7 +16,7 @@ export default class Profile extends React.Component {
             <div>
                 <div className="card">
                     <div className="avatar">
-                        <img src={this.state.avatarUrl} alt='Avatar' />
+                        <img className="avatar__image" src={this.state.avatarUrl} alt='Avatar' />
                     </div>
                     <div className="container">
                         <a className="user__link" href={this.state.githubUrl}>
@@ -35,16 +35,16 @@ export default class Profile extends React.Component {
                         position:relative;
                         left: 44%;
                         top: 10px;
-                        background-color: coral;
+                        background-color: white;
                         border: none;
                         padding: 10px;
+                        border-radius: 4px;
                     }
 
                         .close:hover
                     {
-                        background-color: white;
+                        background-color: coral;
                         color: black;
-
                     }
 
                     .card, .card *{
@@ -63,6 +63,7 @@ export default class Profile extends React.Component {
                         box-shadow: 0 4px 8px 0 rgba(255,160,122,0.5);
                         transition: 0.3s;
                         background: white;
+                        border-radius: 4px;
                     }
 
                     /* On mouse-over, add a deeper shadow */
@@ -80,7 +81,7 @@ export default class Profile extends React.Component {
                     {
                         align-self:center;
                     }
-                    img
+                    .avatar__image
                     {
                         width: 100px;
                         height: 100px;
