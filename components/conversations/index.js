@@ -2,6 +2,7 @@
 import React from 'react';
 import { ChatList } from 'react-chat-elements';
 import io from 'socket.io-client';
+import Icon from 'react-icons/lib/io/android-add-circle';
 
 import Search from './Search/Search.js';
 import CreateConversationModal from './CreateConversationModal/CreateConversationModal.js';
@@ -56,8 +57,7 @@ export default class Conversations extends React.Component {
     }
 
     render() {
-        var Icon = require("react-icons/lib/io/android-add-circle");
-        const dataSource = this.state.shownConversations.map(conversation => {
+         const dataSource = this.state.shownConversations.map(conversation => {
             return {
                 avatar: `/api/avatar/${conversation.title}`,
                 title: conversation.title,
@@ -74,15 +74,15 @@ export default class Conversations extends React.Component {
                         handleNewConversation={this.handleNewConversation}
                     />
 
-                    <button  className="add__button" onClick={this.handleOpenModal}>
-                        <Icon className="add__button__icon"/>
-                    </button>
-
                     <Search
                         conversations={this.state.conversations}
                         handleNewConversation={this.handleNewConversation}
                         handleFilteredConversations={this.setShowedConversations}
                     />
+
+                    <button  className="add__button" onClick={this.handleOpenModal}>
+                        <Icon className="add__button__icon"/>
+                    </button>
 
                 </div>
                 <ChatList
@@ -134,8 +134,9 @@ export default class Conversations extends React.Component {
 
                     .add__button
                     {
+                        cursor: pointer;
                         margin-top: 10px;
-                        margin-left: 25px;
+                        margin-left: 45px;
                         height: 20px;
                         width: 20px;
                         border-radius: 50%;
@@ -145,7 +146,7 @@ export default class Conversations extends React.Component {
                     }
 
                     .coversation-form, .conversation-input {
-                        margin-left: 28px;
+                        margin-left: 20px;
                         margin-top: 5px;
                         border: none;
                         border: 1px solid #c7c7bf;
