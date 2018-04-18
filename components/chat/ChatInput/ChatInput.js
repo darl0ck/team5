@@ -48,8 +48,10 @@ export default class ChatInput extends React.Component {
                         {`               
                         textarea
                         {
+                            flexWrap: wrap;
                             position: fixed;
                             bottom: 0px;
+                            white-space: pre-wrap;
                             left: 53.6%;
                             width: 40.5%;
                             height: 9%;
